@@ -1,0 +1,634 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "linda-smith",
+        "name": [
+          {
+            "use": "official",
+            "family": "Smith",
+            "given": ["Linda"]
+          }
+        ],
+        "birthDate": "1961-06-17",
+        "address": [
+          {
+            "use": "home",
+            "line": ["1 Newark Pl"],
+            "city": "Glenrothes",
+            "district": "Fife",
+            "country": "UK"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-hypertension",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertensive disorder, systemic arterial"
+            }
+          ],
+          "text": "Hypertension"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-osteoarthritis-knee",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "396275006",
+              "display": "Osteoarthritis of knee"
+            }
+          ],
+          "text": "Osteoarthritis of the knee"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-acne-rosacea",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "23762006",
+              "display": "Rosacea"
+            }
+          ],
+          "text": "Acne rosacea"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-depression",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "35489007",
+              "display": "Depressive disorder"
+            }
+          ],
+          "text": "Depression"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-cervical-spondylosis",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "239873007",
+              "display": "Cervical spondylosis"
+            }
+          ],
+          "text": "Cervical spondylosis"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-aspirin",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Aspirin 75mg"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "dosage": [
+          {
+            "text": "75mg, once daily"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-doxazosin",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Doxazosin 6mg (2mg + 4mg)"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "dosage": [
+          {
+            "text": "6mg, once daily"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-co-codamol",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Co-codamol 30/500mg"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "dosage": [
+          {
+            "text": "Two tablets as required"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-venlafaxine",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Venlafaxine 37.5mg"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "dosage": [
+          {
+            "text": "37.5mg, twice daily"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-bumetanide",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Bumetanide 1mg"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "dosage": [
+          {
+            "text": "1mg, twice daily"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-nefopam",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Nefopam 30mg"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "dosage": [
+          {
+            "text": "30mg, three times per day"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-tramadol",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Tramadol 50mg"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "dosage": [
+          {
+            "text": "Two tablets, three times per day"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-fluticasone",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Fluticasone propionate nasal spray"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "dosage": [
+          {
+            "text": "Two sprays as required"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-ramipril",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Ramipril 10mg"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "dosage": [
+          {
+            "text": "10mg, once daily"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-lymecycline",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Lymecycline 408mg"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "dosage": [
+          {
+            "text": "408mg, once daily"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-bmi",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body mass index (BMI)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "effectiveDateTime": "2025-06-17",
+        "valueQuantity": {
+          "value": 32,
+          "unit": "kg/m2"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-egfr",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3",
+              "display": "Estimated glomerular filtration rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "effectiveDateTime": "2025-06-17",
+        "valueQuantity": {
+          "value": 47,
+          "unit": "mL/min/1.73 m2"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-crcl",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine clearance"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "effectiveDateTime": "2025-06-17",
+        "valueQuantity": {
+          "value": 38,
+          "unit": "mL/min"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-bp",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "effectiveDateTime": "2025-06-17",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 115,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 84,
+              "unit": "mmHg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-electrolytes",
+        "status": "final",
+        "code": {
+          "text": "Electrolytes"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "effectiveDateTime": "2025-06-17",
+        "valueCodeableConcept": {
+          "text": "Normal"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-ecg",
+        "status": "final",
+        "code": {
+          "text": "Electrocardiogram"
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "effectiveDateTime": "2025-06-17",
+        "valueString": "Normal sinus rhythm"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-uacr",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14959-1",
+              "display": "Urine albumin/creatinine [Mass Ratio]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/linda-smith"
+        },
+        "effectiveDateTime": "2025-06-17",
+        "valueCodeableConcept": {
+          "text": "Normal"
+        }
+      }
+    }
+  ]
+}
