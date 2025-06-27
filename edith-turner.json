@@ -1,0 +1,843 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "edith-turner",
+        "name": [
+          {
+            "use": "official",
+            "family": "Turner",
+            "given": ["Edith"]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1942-08-19"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-hypertension",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "38341003",
+              "display": "Hypertensive disorder, systemic arterial"
+            }
+          ],
+          "text": "Hypertension"
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "onsetDateTime": "2000"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-osteoarthritis-pain",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "396275006",
+              "display": "Osteoarthritis of knee"
+            }
+          ],
+          "text": "Chronic musculoskeletal pain due to osteoarthritis"
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "onsetDateTime": "2010"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-restless-leg",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61360006",
+              "display": "Restless legs syndrome"
+            }
+          ],
+          "text": "Restless Leg Syndrome"
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "onsetDateTime": "2016"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-ckd-stage-3b",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "236423003",
+              "display": "Chronic kidney disease stage 3b"
+            }
+          ],
+          "text": "Stage 3b Chronic Kidney Disease"
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "onsetDateTime": "2019"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-co-codamol",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Co-codamol 30/500 mg"
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "dosage": [
+          {
+            "text": "Two tablets up to 4 times daily as needed"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-ibuprofen",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Ibuprofen 400 mg"
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "dosage": [
+          {
+            "text": "400 mg, three times daily"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-gabapentin",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Gabapentin 300 mg"
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "dosage": [
+          {
+            "text": "300 mg at night"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-ferrous-fumarate",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Ferrous Fumarate 210 mg"
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "dosage": [
+          {
+            "text": "210 mg, once daily"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-furosemide",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Furosemide 40 mg"
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "dosage": [
+          {
+            "text": "40 mg, once daily"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "medstmt-lisinopril",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Lisinopril 10 mg"
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "dosage": [
+          {
+            "text": "10 mg, once daily"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-scr-2024-05-10",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-05-10",
+        "valueQuantity": {
+          "value": 145,
+          "unit": "µmol/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-scr-2024-11-10",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-11-10",
+        "valueQuantity": {
+          "value": 151,
+          "unit": "µmol/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-scr-2025-06-09",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2025-06-09",
+        "valueQuantity": {
+          "value": 161,
+          "unit": "µmol/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-egfr-2024-05-10",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3",
+              "display": "Estimated glomerular filtration rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-05-10",
+        "valueQuantity": {
+          "value": 37,
+          "unit": "mL/min/1.73 m2"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-egfr-2024-11-10",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-11-10",
+        "valueQuantity": {
+          "value": 35,
+          "unit": "mL/min/1.73 m2"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-egfr-2025-06-09",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2025-06-09",
+        "valueQuantity": {
+          "value": 30,
+          "unit": "mL/min/1.73 m2"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-potassium-2024-05-10",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3",
+              "display": "Potassium [Moles/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-05-10",
+        "valueQuantity": {
+          "value": 4.5,
+          "unit": "mmol/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-potassium-2024-11-10",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-11-10",
+        "valueQuantity": {
+          "value": 4.6,
+          "unit": "mmol/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-potassium-2025-06-09",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2025-06-09",
+        "valueQuantity": {
+          "value": 5.2,
+          "unit": "mmol/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-hb-2024-05-10",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-05-10",
+        "valueQuantity": {
+          "value": 109,
+          "unit": "g/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-hb-2024-11-10",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-11-10",
+        "valueQuantity": {
+          "value": 111,
+          "unit": "g/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-hb-2025-06-09",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2025-06-09",
+        "valueQuantity": {
+          "value": 108,
+          "unit": "g/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-crp-2024-05-10",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C reactive protein [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-05-10",
+        "valueQuantity": {
+          "value": 9,
+          "unit": "mg/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-crp-2024-11-10",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-11-10",
+        "valueQuantity": {
+          "value": 7,
+          "unit": "mg/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-crp-2025-06-09",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2025-06-09",
+        "valueQuantity": {
+          "value": 8,
+          "unit": "mg/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-bp-2024-05-10",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-05-10",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 138,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 76,
+              "unit": "mmHg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-bp-2024-11-10",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2024-11-10",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 134,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 80,
+              "unit": "mmHg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-bp-2025-06-09",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/edith-turner"
+        },
+        "effectiveDateTime": "2025-06-09",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 136,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 84,
+              "unit": "mmHg"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
